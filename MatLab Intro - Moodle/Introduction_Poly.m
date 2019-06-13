@@ -1,3 +1,4 @@
+%http://ctms.engin.umich.edu/
 %% Polynomial (double %% used for section within 1 script file)
 clc; clear
 
@@ -22,12 +23,20 @@ polyval(b, 1)
 
 % Multiplying polynomials
 D = conv(b,c)
-
+roots(D)
 % Dividing two polynomials (devide D by b, expect to get c)
-[q, r] = deconv(D, b)
+[q, r] = deconv(D, b);
 
 % Converting roots to polynomial(s)
-e = [-2 -2]
-p1 = poly(e)
-p1 = poly(r2)
+e = [-2 -2];
+p1 = poly(e);
+p1 = poly(r2);
+
+f = [0 -3 -4];
+p2 = poly(f);
+
+g = [-1+2*j -1-2*j];
+p3 = poly(g)
+
+
 
