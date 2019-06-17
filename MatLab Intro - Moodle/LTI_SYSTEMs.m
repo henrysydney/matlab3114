@@ -30,7 +30,7 @@
    
  % Closed loop system
    %help feedback
-   %           G1 is transfer function, 1 is feedback
+   %G1 is transfer function, 1 is feedback
    
    T1 = feedback(G1, 1);
    % Check whether the system is stable (T1)
