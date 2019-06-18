@@ -1,7 +1,7 @@
 % Lab 01 Exercise
 clc; clear all; close all;
-   syms R Km B J L Ka;
-% Declare variables
+%    syms R Km B J L Ka;
+% % Declare variables
    R = 1;
    Km = 5;
    B = 20;
@@ -33,15 +33,17 @@ clc; clear all; close all;
    Rs = 5.73*pi/180;    % 5.73 degress to rad
    Ka1 = 10;
    T1 = feedback(Ka1*G, H);
-   % pT1 = pole(T1);
-
+   pT1 = pole(T1);
+   zT1 = zero(T1);
    Ka2 = 19.8;
    T2 = feedback(Ka2*G, H);
-   % pT2 = pole(T2);
-
+   pT2 = pole(T2);
+   zT2 = zero(T2);
    Ka3 = 40;
    T3 = feedback(Ka3*G,H);
-   % pT3 = pole(T3);
+   pT3 = pole(T3);
+   zT3 = zero(T3);
+
    figure
    step(Rs*T1, Rs*T2, Rs*T3)  %Scaled step response
    % set(0, 'DefaultLineWidth', 2);

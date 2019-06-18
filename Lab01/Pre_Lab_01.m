@@ -76,3 +76,5 @@
    % L = 1:length(discSpeed)/2+1;
    % plot(f,abs(F(1:length(discSpeed)/2+1))); 
    % xlim([0 200]);       
+
+   
